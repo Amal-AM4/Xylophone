@@ -34,47 +34,20 @@ class XylophoneApp extends StatelessWidget {
                 ),
                 Expanded(
                   child: TextButton(
-                    style: TextButton.styleFrom(backgroundColor: Colors.orange),
-                    onPressed: () {
-                      print('btn is clicked');
+                    style: TextButton.styleFrom(backgroundColor: Colors.orange, enableFeedback: false),
+                    onPressed: () async {
+                      final player = AudioPlayer();
+                      await player.play(AssetSource('sound/note-1_2.mp3'));
                     },
                     child: Text(''),
                   ),
                 ),
                 Expanded(
                   child: TextButton(
-                    style: TextButton.styleFrom(backgroundColor: Colors.yellow),
-                    onPressed: () {
-                      print('btn is clicked');
-                    },
-                    child: Text(''),
-                  ),
-                ),
-                Expanded(
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                      backgroundColor: Colors.green.shade400,
-                    ),
-                    onPressed: () {
-                      print('btn is clicked');
-                    },
-                    child: Text(''),
-                  ),
-                ),
-                Expanded(
-                  child: TextButton(
-                    style: TextButton.styleFrom(backgroundColor: Colors.green),
-                    onPressed: () {
-                      print('btn is clicked');
-                    },
-                    child: Text(''),
-                  ),
-                ),
-                Expanded(
-                  child: TextButton(
-                    style: TextButton.styleFrom(backgroundColor: Colors.blue),
-                    onPressed: () {
-                      print('btn is clicked');
+                    style: TextButton.styleFrom(backgroundColor: Colors.yellow, enableFeedback: false),
+                    onPressed: () async {
+                      final player = AudioPlayer();
+                      await player.play(AssetSource('sound/note-1_3.mp3'));
                     },
                     child: Text(''),
                   ),
@@ -82,10 +55,43 @@ class XylophoneApp extends StatelessWidget {
                 Expanded(
                   child: TextButton(
                     style: TextButton.styleFrom(
-                      backgroundColor: Colors.purple.shade800,
+                      backgroundColor: Colors.green.shade400, enableFeedback: false,
                     ),
-                    onPressed: () {
-                      print('btn is clicked');
+                    onPressed: () async {
+                      final player = AudioPlayer();
+                      await player.play(AssetSource('sound/note-1_4.mp3'));
+                    },
+                    child: Text(''),
+                  ),
+                ),
+                Expanded(
+                  child: TextButton(
+                    style: TextButton.styleFrom(backgroundColor: Colors.green, enableFeedback: false,),
+                    onPressed: () async {
+                      final player = AudioPlayer();
+                      await player.play(AssetSource('sound/note-1_5.mp3'));
+                    },
+                    child: Text(''),
+                  ),
+                ),
+                Expanded(
+                  child: TextButton(
+                    style: TextButton.styleFrom(backgroundColor: Colors.blue, enableFeedback: false),
+                    onPressed: () async {
+                      final player = AudioPlayer();
+                      await player.play(AssetSource('sound/note-1_6.mp3'));
+                    },
+                    child: Text(''),
+                  ),
+                ),
+                Expanded(
+                  child: TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: Colors.purple.shade800, enableFeedback: false,
+                    ),
+                    onPressed: () async {
+                      final player = AudioPlayer();
+                      await player.play(AssetSource('sound/note-1_7.mp3'));
                     },
                     child: Text(''),
                   ),
