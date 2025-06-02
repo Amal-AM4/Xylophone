@@ -5,6 +5,11 @@ void main() {
   runApp(const XylophoneApp());
 }
 
+void playSound(int soundNumber) async {
+  final player = AudioPlayer();
+  await player.play(AssetSource('sound/note-1_$soundNumber.mp3'));
+}
+
 class XylophoneApp extends StatelessWidget {
   const XylophoneApp({super.key});
 
@@ -25,9 +30,8 @@ class XylophoneApp extends StatelessWidget {
                       backgroundColor: Colors.red,
                       enableFeedback: false,
                     ),
-                    onPressed: () async {
-                      final player = AudioPlayer();
-                      await player.play(AssetSource('sound/note-1_1.mp3'));
+                    onPressed: () {
+                      playSound(1);
                     },
                     child: Text(''),
                   ),
@@ -35,9 +39,8 @@ class XylophoneApp extends StatelessWidget {
                 Expanded(
                   child: TextButton(
                     style: TextButton.styleFrom(backgroundColor: Colors.orange, enableFeedback: false),
-                    onPressed: () async {
-                      final player = AudioPlayer();
-                      await player.play(AssetSource('sound/note-1_2.mp3'));
+                    onPressed: () {
+                      playSound(2);
                     },
                     child: Text(''),
                   ),
@@ -45,9 +48,8 @@ class XylophoneApp extends StatelessWidget {
                 Expanded(
                   child: TextButton(
                     style: TextButton.styleFrom(backgroundColor: Colors.yellow, enableFeedback: false),
-                    onPressed: () async {
-                      final player = AudioPlayer();
-                      await player.play(AssetSource('sound/note-1_3.mp3'));
+                    onPressed: () {
+                      playSound(3);
                     },
                     child: Text(''),
                   ),
@@ -57,9 +59,8 @@ class XylophoneApp extends StatelessWidget {
                     style: TextButton.styleFrom(
                       backgroundColor: Colors.green.shade400, enableFeedback: false,
                     ),
-                    onPressed: () async {
-                      final player = AudioPlayer();
-                      await player.play(AssetSource('sound/note-1_4.mp3'));
+                    onPressed: () {
+                      playSound(4);
                     },
                     child: Text(''),
                   ),
@@ -67,9 +68,8 @@ class XylophoneApp extends StatelessWidget {
                 Expanded(
                   child: TextButton(
                     style: TextButton.styleFrom(backgroundColor: Colors.green, enableFeedback: false,),
-                    onPressed: () async {
-                      final player = AudioPlayer();
-                      await player.play(AssetSource('sound/note-1_5.mp3'));
+                    onPressed: () {
+                      playSound(5);
                     },
                     child: Text(''),
                   ),
@@ -77,9 +77,8 @@ class XylophoneApp extends StatelessWidget {
                 Expanded(
                   child: TextButton(
                     style: TextButton.styleFrom(backgroundColor: Colors.blue, enableFeedback: false),
-                    onPressed: () async {
-                      final player = AudioPlayer();
-                      await player.play(AssetSource('sound/note-1_6.mp3'));
+                    onPressed: () {
+                      playSound(6);
                     },
                     child: Text(''),
                   ),
@@ -89,9 +88,8 @@ class XylophoneApp extends StatelessWidget {
                     style: TextButton.styleFrom(
                       backgroundColor: Colors.purple.shade800, enableFeedback: false,
                     ),
-                    onPressed: () async {
-                      final player = AudioPlayer();
-                      await player.play(AssetSource('sound/note-1_7.mp3'));
+                    onPressed: () {
+                      playSound(7);
                     },
                     child: Text(''),
                   ),
