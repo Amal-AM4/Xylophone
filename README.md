@@ -14,7 +14,7 @@ It plays **7 musical notes**, each triggered by a **TextButton** with a differen
 
 ## 📱 Screenshot
 
-<img src="assets/screenshots/Screenshot_1748842965.png" alt="Xylophone App Screenshot" width="300"/>
+<img src="assets/screenshot/Screenshot_1748842965.png" alt="Xylophone App Screenshot" width="300"/>
 
 > *(Make sure your screenshot is saved at `assets/screenshots/Screenshot_1748842965.png`)*
   
